@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: content-box;
+        }
+
+        div#chess {
+            width: 800px;
+            height: 800px;
+            border: 5px solid #000;
+            margin: auto;
+            line-height: 0px;
+        }
+
+        div.chessSquare {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="w-screen h-screen flex flex-row">
+        <div class="flex-1">
+            <select id="chess-pieces">
+            </select>
+        </div>
+        <div class="mx-auto">
+            <div id="chess" class="mx-auto"></div>
+        </div>
+    </div>
+
+    <script src="./chess.js"></script>
+</body>
+</html>
